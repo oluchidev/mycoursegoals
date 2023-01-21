@@ -1,0 +1,19 @@
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    width: 70%;
+    margin: 10px;
+    padding: 10px 0px;
+    background: #d1cfcf;
+    border: none;
+    outline: none;
+}
+
+form label{
+    margin: 10px;
+}
