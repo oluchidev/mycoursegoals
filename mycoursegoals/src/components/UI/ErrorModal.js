@@ -6,7 +6,7 @@ import Card from './Card';
 const ErrorModal = (props) => {
 return(
     <div>
-        <div className={classes.overlay}/>
+        <div className={classes.overlay} onClick={props.onConfirm}/>
     <Card className={classes.modal}>
         <header className={classes.header}>
             <h2>{props.title}</h2>
@@ -15,7 +15,7 @@ return(
             <p>{props.message}</p>
         </div>
         <footer className={classes.footer}>
-            <Button>okay</Button>
+            <Button onClick={props.onConfirm}>okay</Button>
         </footer>
     </Card>
     </div>
